@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr class="text-center thead-dark">
+                <th>당신의 평가...</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr class="text-center">
+            <td>{{ document }}...는</td>
+        </tr>
+        <tr class="text-center">
+            <td colspan="3">{{ rate }} 확율로</td>
+        </tr>
+        <tr class="text-center">
+            <td colspan="3">{{ label }} 적 평가입니다.</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
